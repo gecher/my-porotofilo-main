@@ -1,0 +1,283 @@
+/* Importing Custom Fonts */
+@font-face {
+  font-family: "Roboto_slab";
+  font-weight: normal;
+  src: local("Roboto_slab"),
+    url(./fonts/Roboto_slab/RobotoSlab-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto_slab";
+  font-weight: bold;
+  src: local("Roboto_slab"),
+    url(./fonts/Roboto_slab/RobotoSlab-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto_slab";
+  font-weight: 900;
+  src: local("Roboto_slab"),
+    url(./fonts/Roboto_slab/RobotoSlab-Black.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Gilda_display";
+  src: local("Gilda_display"),
+    url(./fonts/Gilda_display/GildaDisplay-Regular.ttf) format("truetype");
+}
+
+/* Animations */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Font Styling */
+.name {
+  font-family: Roboto_slab, Georgia, serif;
+  font-weight: 500;
+  font-size: larger;
+}
+
+.head {
+  font-family: Roboto_slab, Georgia, serif;
+}
+
+.nav {
+  font-family: Gilda_display, Arial, serif;
+  font-weight: 700;
+}
+
+.para {
+  font-family: Gilda_display, Arial, serif;
+}
+
+/* Background Color */
+/* .back {
+  background-color: #0f0f0f;
+  color: white;
+} 
+
+/* Custom Cursor */
+.cursor {
+  position: fixed;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: white;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Hidden by default */
+  width: 250px;
+  height: 100%;
+  background-color: black;
+  color: white;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Show Sidebar */
+.sidebar.active {
+  left: 0;
+}
+
+/* Close Button */
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+/* Profile Image */
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid white;
+}
+
+/* Navigation Links */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 15px 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00aaff; /* Soft Blue Hover */
+  text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #00aaff;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 1100;
+  color: white;
+}
+
+Prevent Homepage Content from Shifting
+/* .main-content {
+  transition: margin-left 0.3s ease-in-out;
+  background-color: #0f0f0f;
+  color: white;
+  padding: 20px;
+} */
+
+/* Light & Dark Mode Toggle */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1100;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  color: #00aaff;
+}
+
+/* Light Mode */
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
+.light-mode .sidebar {
+  background-color: white;
+  color: black;
+}
+
+.light-mode .toggle-btn,
+.light-mode .theme-toggle {
+  color: black;
+}
+
+.light-mode .nav ul li a {
+  color: black;
+}
+
+.light-mode .nav ul li a:hover {
+  color: blue;
+}
+
+.light-mode .social-icons a {
+  color: black;
+}/* Apply background color to the entire layout */
+.layout-container {
+  min-height: 100vh; /* Ensures full screen coverage */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Page content */
+.page-content {
+  width: 100%;
+  height: 100%;
+}
+
+/* Cursor styling */
+.cursor {
+  position: fixed;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: white;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+/* Apply background color to the entire layout */
+.layout-container {
+  background-color: #0f0f0f; /* Change this to any color you prefer */
+  min-height: 100vh; /* Ensures full screen coverage */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Page content */
+.page-content {
+  width: 100%;
+  height: 100%;
+}
+
+/* Cursor styling */
+.cursor {
+  position: fixed;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: white;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
